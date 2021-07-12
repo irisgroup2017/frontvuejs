@@ -2,15 +2,21 @@
   <div class="hold-transition login-page">
     <div class="login-box">
       <div class="login-logo">
-         <a href="/"><b>Sales</b>&nbsp;Online</a>
+        <a href="/"><b>Sales</b>&nbsp;Online</a>
       </div>
       <div class="card">
         <div class="card-body login-card-body">
-          <p class="login-box-msg">Sign in to start your session</p>
+          <p class="login-box-msg">กรุณาเข้าระบบผ่านอีเมล์</p>
 
-          <form action="/checklogin" method="post">
+          <form @submit.prevent="handleSubmit">
             <div class="input-group mb-3">
-              <input type="email" class="form-control" placeholder="Email" />
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                v-model="f_email"
+                placeholder="name@example.com"
+              />
               <div class="input-group-append">
                 <div class="input-group-text">
                   <span class="fas fa-envelope"></span>
@@ -21,6 +27,8 @@
               <input
                 type="password"
                 class="form-control"
+                id="floatingPassword"
+                v-model="f_password"
                 placeholder="Password"
               />
               <div class="input-group-append">
@@ -31,9 +39,7 @@
             </div>
             <div class="row">
               <div class="col-8">
-                <div class="icheck-primary">
- 
-                </div>
+                <div class="icheck-primary"></div>
               </div>
               <div class="col-4">
                 <button type="submit" class="btn btn-primary btn-block">
@@ -44,7 +50,7 @@
           </form>
 
           <div class="social-auth-links text-center mb-3">
-          <div class="checkbox mb-3">
+            <div class="checkbox mb-3">
               <div v-if="message" class="alert alert-success" role="alert">
                 {{ message }}
               </div>
@@ -59,3 +65,35 @@
     </div>
   </div>
 </template>
+<script>
+import axios from "axios";
+export default {
+  name: "Login",
+  data() {
+    return {
+      f_email: "",
+      f_password: "",
+      message: "",
+      token: "",
+      messagesboxs: "",
+    };
+  },
+  methods: {
+    async handleSubmit() {
+      const response = await axios.post("authen/login", {
+        f_email: this.f_email,
+        f_password: this.f_password,
+      });
+       console.log(response)
+      this.message = response.data.lang
+      this.token = response.data.token
+      this.messagesboxs = response.data.messagesboxs
+      if (response.data.token) {
+        localStorage.setItem('token', response.data.token)
+        this.$router.push('/admin')
+      }   
+      return response.data    
+    },
+  },
+};
+</script>

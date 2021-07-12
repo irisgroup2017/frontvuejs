@@ -80,7 +80,7 @@ export default {
   },
   methods: {
     async handleSubmit() {
-      const response = await axios.post("api/users", {
+      const response = await axios.post("authen/login", {
         f_email: this.f_email,
         f_password: this.f_password,
       });
