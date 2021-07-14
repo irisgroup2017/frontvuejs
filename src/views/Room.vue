@@ -31,9 +31,39 @@
             </button>
           </div>
         </div>
-        <div class="card-body">
-          Start creating your amazing application!
-        </div>
+              <div class="card-body">
+                <table id="example1" class="table table-bordered table-striped">
+                  <thead>
+                  <tr>
+                    <th>เลขที่เอกสาร</th>
+                    <th>โครงการ</th>
+                    <th>ยูนิต</th>
+                    <th>ชื่อ - นามสกุล</th>
+                    <th>มือถือ</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+
+                  <tr v-for="(item, index) in info.data" :key="index">
+                    <td> {{ item.f_running }}</td>
+                    <td> {{ item.f_project }}</td>
+                    <td> {{ item.f_unit }}</td>
+                    <td> {{ item.f_customer }}</td>
+                    <td> {{ item.f_mobile }}</td>
+                  </tr>
+
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th>เลขที่เอกสาร</th>
+                    <th>โครงการ</th>
+                    <th>ยูนิต</th>
+                    <th>ชื่อ - นามสกุล</th>
+                    <th>มือถือ</th>
+                  </tr>
+                  </tfoot>
+                </table>
+              </div>
         <div class="card-footer">
           Footer
         </div>
@@ -44,6 +74,7 @@
 </div>
 </template>
 <script>
+import axios from "axios";
 import Header from "@/components/Header.vue";
 import Menu from "@/components/Menu.vue";
 import Footer from "@/components/Footer.vue";
@@ -54,5 +85,19 @@ export default {
     Header,
     Footer,
   },
+  props: {
+    title: String
+  },
+  data(){
+    return {
+      info: []
+    }
+  },
+    mounted(){
+    axios.get('booking').then(response => {
+      console.log(response.data)
+      this.info = response.data
+    })
+  }
 };
 </script>
