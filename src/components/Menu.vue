@@ -55,21 +55,21 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="/" class="nav-link">
+                  <a href="/sales" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Dashboard v1</p>
+                    <p>ขาย</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/" class="nav-link">
+                  <a href="/construction" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Dashboard v2</p>
+                    <p>ก่อสร้าง</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="/" class="nav-link">
+                  <a href="/aftersales" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Dashboard v3</p>
+                    <p>แจ้งซ่อม</p>
                   </a>
                 </li>
               </ul>
@@ -78,7 +78,7 @@
               <a href="/" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
                 <p>
-                  Widgets
+                  ข่าวประกาศ
                   <span class="right badge badge-danger">New</span>
                 </p>
               </a>
@@ -87,7 +87,7 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-copy"></i>
                 <p>
-                  Layout Options
+                  งานขาย
                   <i class="fas fa-angle-left right"></i>
                   <span class="badge badge-info right">6</span>
                 </p>
@@ -96,25 +96,25 @@
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Top Navigation</p>
+                    <p>ใบเสนอราคา</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Top Navigation + Sidebar</p>
+                    <p>จองซื้อ</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Boxed</p>
+                    <p>ทำสัญญา</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Fixed Sidebar</p>
+                    <p>เงินดาวน์</p>
                   </a>
                 </li>
                 <li class="nav-item">
@@ -123,34 +123,75 @@
                     class="nav-link"
                   >
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Fixed Sidebar <small>+ Custom Area</small></p>
+                    <p>ลูกค้าค้างชำระ</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Fixed Navbar</p>
+                    <p>ติดตามลูกค้าทำเอกสาร</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Fixed Footer</p>
+                    <p>ขอสินเชื่อ</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Collapsed Sidebar</p>
+                    <p>นัดหมายโอน</p>
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>บันทึกโอนกรรมสิทธิ์</p>
+                  </a>
+                </li>                
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>โอนย้ายห้องยกเลิก</p>
+                  </a>
+                </li>                
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>ยกเลิก</p>
+                  </a>
+                </li>                
               </ul>
             </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-plus-square"></i>
+              <p>
+                งานก่อสร้าง
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/search/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ปรับสถานะผังโครงการ</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/search/enhanced.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ข้อมูลผังโครงการ</p>
+                </a>
+              </li>
+            </ul>
+          </li>            
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-chart-pie"></i>
                 <p>
-                  Charts
+                  งานสาธารณูปโภค
                   <i class="right fas fa-angle-left"></i>
                 </p>
               </a>
@@ -158,29 +199,59 @@
                 <li class="nav-item">
                   <a href=".#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>ChartJS</p>
+                    <p>โอนมิเตอร์น้ำ</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Flot</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>Inline</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href=".#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
-                    <p>uPlot</p>
+                    <p>โอนมิเตอร์ไฟ</p>
                   </a>
                 </li>
               </ul>
             </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-search"></i>
+              <p>
+                งานแจ้งซ่อม
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/search/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>รายการแจ้งซ่อม</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/search/enhanced.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ประวัติการแจ้งซ่อม</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-header">Documentation</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-danger"></i>
+              <p class="text">คู่มือการใช้งาน</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-warning"></i>
+              <p>แจ้งปัญหาการใช้งาน</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon far fa-circle text-info"></i>
+              <p>ข้อเสนอแนะเพิ่มเติม</p>
+            </a>
+          </li>            
           </ul>
         </nav>
       </div>
