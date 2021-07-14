@@ -14,7 +14,7 @@
                 type="email"
                 class="form-control"
                 id="floatingInput"
-                v-model="f_email"
+                v-model="f_email"              
                 placeholder="name@example.com"
               />
               <div class="input-group-append">
@@ -68,19 +68,33 @@
 <script>
 import axios from "axios";
 export default {
-  name: "Login",
+  name: "home",
   data() {
     return {
       f_email: "",
       f_password: "",
-      message: "",
       token: "",
-      messagesboxs: "",
+      message:"",
+      messagesboxs:"",
     };
   },
   methods: {
-    async handleSubmit() {
-      const response = await axios.post("authen/login", {
+     handleSubmit: function (e) {
+      if (this.name && this.age) {
+        return true;
+      }
+
+      this.messagesboxs = [];
+
+      if (!this.f_email) {
+        this.messagesboxs.push('Email required.');
+      }
+      if (!this.f_password) {
+        this.messagesboxs.push('Password required.');
+      }
+
+      e.preventDefault();
+      const response =  axios.post("authen/login", {
         f_email: this.f_email,
         f_password: this.f_password,
       });
@@ -92,7 +106,7 @@ export default {
         localStorage.setItem('token', response.data.token)
         this.$router.push('/admin')
       }   
-      return response.data    
+      return response.data        
     },
   },
 };
