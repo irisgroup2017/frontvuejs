@@ -83,9 +83,7 @@ export default {
       if (this.name && this.age) {
         return true;
       }
-
       this.messagesboxs = [];
-
       if (!this.f_email) {
         this.messagesboxs.push('Email required.');
       }
@@ -99,7 +97,7 @@ export default {
         f_password: this.f_password,
       });
        console.log(response)
-      this.message = response.data.lang
+      this.message = response.data.message
       this.token = response.data.token
       this.messagesboxs = response.data.messagesboxs
       if (response.data.token) {
