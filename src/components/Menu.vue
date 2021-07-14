@@ -96,6 +96,12 @@
                 <li class="nav-item">
                   <a href="#" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
+                    <p>ลูกค้าสนใจโครงการ</p>
+                  </a>
+                </li>              
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
                     <p>ใบเสนอราคา</p>
                   </a>
                 </li>
@@ -166,7 +172,7 @@
             </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon far fa-plus-square"></i>
+              <i class="nav-icon fas fa-warehouse"></i>
               <p>
                 งานก่อสร้าง
                 <i class="fas fa-angle-left right"></i>
@@ -189,7 +195,7 @@
           </li>            
             <li class="nav-item">
               <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-chart-pie"></i>
+                <i class="nav-icon fas fa-house-user"></i>
                 <p>
                   งานสาธารณูปโภค
                   <i class="right fas fa-angle-left"></i>
@@ -198,13 +204,13 @@
               <ul class="nav nav-treeview">
                 <li class="nav-item">
                   <a href=".#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
+                    <i class="fas fa-faucet nav-icon"></i>
                     <p>โอนมิเตอร์น้ำ</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">
-                    <i class="far fa-circle nav-icon"></i>
+                    <i class="fas fa-bolt nav-icon"></i>
                     <p>โอนมิเตอร์ไฟ</p>
                   </a>
                 </li>
@@ -284,7 +290,55 @@
                 </a>
               </li>            
             </ul>
-          </li>                       
+          </li>
+          <li class="nav-header">System Configuration</li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-database"></i>
+              <p>
+                ข้อมูลระบบ
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/company" class="nav-link">
+                  <i class="fas fa-database nav-icon"></i>
+                  <p>บริษัท</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/department" class="nav-link">
+                  <i class="fas fa-database nav-icon"></i>
+                  <p>หน่วยงาน</p>
+                </a>
+              </li>  
+              <li class="nav-item">
+                <a href="/position" class="nav-link">
+                  <i class="fas fa-user-plus nav-icon"></i>
+                  <p>ตำแหน่ง</p>
+                </a>
+              </li> 
+              <li class="nav-item">
+                <a href="/bank" class="nav-link">
+                  <i class="fas fa-money-bill-alt nav-icon"></i>
+                  <p>ธนาคาร</p>
+                </a>
+              </li>      
+              <li class="nav-item">
+                <a href="/project" class="nav-link">
+                  <i class="fas fa-home nav-icon"></i>
+                  <p>โครงการ</p>
+                </a>
+              </li>   
+              <li class="nav-item">
+                <a href="/users" class="nav-link">
+                  <i class="fas fa-users nav-icon"></i>
+                  <p>ผู้ใช้งาน</p>
+                </a>
+              </li>                                                                    
+            </ul>
+          </li>
           <li class="nav-header">Documentation</li>
           <li class="nav-item">
             <a href="#" class="nav-link">
