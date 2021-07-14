@@ -250,13 +250,13 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="/pricelist" class="nav-link">
-                  <i class="fas fa-bullhorn"></i>
+                  <i class="fas fa-bullhorn nav-icon"></i>
                   <p>ตารางราคาขาย</p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="/promotion" class="nav-link">
-                  <i class="fas fa-bullhorn"></i>
+                  <i class="fas fa-bullhorn nav-icon"></i>
                   <p>ตารางโปรโมชั่น</p>
                 </a>
               </li>
