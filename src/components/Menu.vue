@@ -233,6 +233,58 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-ad"></i>
+              <p>
+                การตลาด
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/pricelist" class="nav-link">
+                  <i class="fas fa-bullhorn"></i>
+                  <p>ตารางราคาขาย</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/promotion" class="nav-link">
+                  <i class="fas fa-bullhorn"></i>
+                  <p>ตารางโปรโมชั่น</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/setpromotion" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>จัดกลุ่มโปรโมชั่น</p>
+                </a>
+              </li>              
+            </ul>
+          </li> 
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-money-bill-alt"></i>
+              <p>
+                บัญชี
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/customer" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ข้อมูลลูกค้า</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/room" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>ข้อมูลยูนิต</p>
+                </a>
+              </li>            
+            </ul>
+          </li>                       
           <li class="nav-header">Documentation</li>
           <li class="nav-item">
             <a href="#" class="nav-link">

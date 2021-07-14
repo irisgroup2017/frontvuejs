@@ -4,6 +4,8 @@ import Home from "../views/Home.vue";
 import About from "../views/About.vue";
 import Admin from "../views/Admin.vue";
 import Dashboard from "../views/Dashboard.vue";
+import Customer from "../views/Customer.vue";
+import Room from "../views/Room.vue";
 
 Vue.use(VueRouter);
 
@@ -27,7 +29,17 @@ const routes = [
     path: "/dashboard",
     name: "Dashboard",
     component: Dashboard,
+  }, 
+  {
+    path: "/room",
+    name: "Room",
+    component: Room,
   },    
+  {
+    path: "/customer",
+    name: "Customer",
+    component: Customer,
+  },           
 ];
 
 const router = new VueRouter({
