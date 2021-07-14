@@ -94,38 +94,38 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/leed" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>ลูกค้าสนใจโครงการ</p>
                   </a>
                 </li>              
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/quotation" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>ใบเสนอราคา</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/booking" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>จองซื้อ</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/contact" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>ทำสัญญา</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/findown" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>เงินดาวน์</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a
-                    href="#"
+                    href="/payments"
                     class="nav-link"
                   >
                     <i class="far fa-circle nav-icon"></i>
@@ -133,37 +133,37 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/contactusers" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>ติดตามลูกค้าทำเอกสาร</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/banking" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>ขอสินเชื่อ</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/meeting" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>นัดหมายโอน</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/owner" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>บันทึกโอนกรรมสิทธิ์</p>
                   </a>
                 </li>                
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="bookingtranfer" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>โอนย้ายห้องยกเลิก</p>
                   </a>
                 </li>                
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="/bookingcancel" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>ยกเลิก</p>
                   </a>
@@ -180,13 +180,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/search/simple.html" class="nav-link">
+                <a href="/updateplan" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>ปรับสถานะผังโครงการ</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/search/enhanced.html" class="nav-link">
+                <a href="/plan" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>ข้อมูลผังโครงการ</p>
                 </a>
@@ -226,13 +226,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/search/simple.html" class="nav-link">
+                <a href="/aftersale" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>รายการแจ้งซ่อม</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/search/enhanced.html" class="nav-link">
+                <a href="/aftersales" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>ประวัติการแจ้งซ่อม</p>
                 </a>
