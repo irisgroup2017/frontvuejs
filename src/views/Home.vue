@@ -54,8 +54,8 @@
               <div v-if="message" class="alert alert-success" role="alert">
                 {{ message }}
               </div>
-              <div v-if="messagesboxs" class="alert alert-danger" role="alert">
-                {{ messagesboxs }}
+              <div v-if="message" class="alert alert-danger" role="alert">
+                {{ message }}
               </div>
             </div>
             <small v-if="token" class="text-muted">Token : {{ token }}.</small>
@@ -75,7 +75,7 @@ export default {
       f_password: "",
       token: "",
       message:"",
-      messagesboxs:"",
+    //  messagesboxs:"",
     };
   },
   methods: {
@@ -83,12 +83,12 @@ export default {
       if (this.name && this.age) {
         return true;
       }
-      this.messagesboxs = [];
+      this.message = [];
       if (!this.f_email) {
-        this.messagesboxs.push('Email required.');
+        this.message.push('Email required.');
       }
       if (!this.f_password) {
-        this.messagesboxs.push('Password required.');
+        this.message.push('Password required.');
       }
 
       e.preventDefault();
@@ -99,7 +99,7 @@ export default {
        console.log(response)
       this.message = response.data.message
       this.token = response.data.token
-      this.messagesboxs = response.data.messagesboxs
+     // this.messagesboxs = response.data.messagesboxs
       if (response.data.token) {
         localStorage.setItem('token', response.data.token)
         this.$router.push('/admin')
