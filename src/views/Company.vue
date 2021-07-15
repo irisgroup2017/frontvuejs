@@ -32,16 +32,10 @@
           </div>
         </div>
         <div class="card-body">
-      <img
-        v-bind:src="picture"
-        :alt="`${firstName} ${lastName}`"
-        :class="gender"
-      />
-      <h1>{{firstName}} {{lastName}}</h1>
-      <h3>Email: {{email}}</h3>
+          Start creating your amazing application!
         </div>
         <div class="card-footer">
-          <buttons :class="gender" @click="getUser()">Get Random User</buttons>
+          Footer
         </div>
       </div>
     </section>
@@ -62,66 +56,8 @@ export default {
   },
   data() {
     return {
-      info: {},
-      title: "System Admin",
-      firstName: 'Thanit',
-      lastName: 'Netprokaew',
-      email: 'noom1009@gmail.com',
-      gender: 'male',
-      picture: 'https://avatars.githubusercontent.com/u/23498431?v=4',
+      title: "Company",
     };
-  },
-    methods: {
-      update(info){
-        console.log(info)
-      },
-    async getUser() {
-      const res = await fetch('https://randomuser.me/api')
-      const { results } = await res.json()
-      console.log(results)
-      this.firstName = results[0].name.first
-      this.lastName = results[0].name.last
-      this.email = results[0].email
-      this.gender = results[0].gender
-      this.picture = results[0].picture.large
-    },
-
   },
 };
 </script>
-<style scoped>
-img {
-  border-radius: 50%;
-  border: 5px #333 solid;
-  margin-bottom: 1rem;
-}
-
-.male {
-  border-color: steelblue;
-  background-color: steelblue;
-}
-
-.female {
-  border-color: pink;
-  background-color: pink;
-  color: #333;
-}
-
-buttons {
-  cursor: pointer;
-  display: inline-block;
-  background: #333;
-  color: white;
-  font-size: 18px;
-  border: 0;
-  padding: 1rem 1.5rem;
-}
-
-button:focus {
-  outline: none;
-}
-
-button:hover {
-  transform: scale(0.98);
-}
-</style>

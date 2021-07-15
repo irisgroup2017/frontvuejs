@@ -7,12 +7,12 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Card Unit</h1>
+            <h1>Card Room</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Unit</li>
+              <li class="breadcrumb-item active">Room</li>
             </ol>
           </div>
         </div>
@@ -32,7 +32,7 @@
           </div>
         </div>
               <div class="card-body">
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="example2" class="table table-bordered table-striped">
                   <thead>
                   <tr>
                     <th>เลขที่เอกสาร</th>
@@ -40,16 +40,21 @@
                     <th>ยูนิต</th>
                     <th>ชื่อ - นามสกุล</th>
                     <th>มือถือ</th>
+                    <th>...</th>
                   </tr>
                   </thead>
                   <tbody>
 
-                  <tr v-for="(item, index) in info.data" :key="index">
+                  <tr v-for="(item, index) in items.data" :key="index">
                     <td> {{ item.f_running }}</td>
                     <td> {{ item.f_project }}</td>
                     <td> {{ item.f_unit }}</td>
                     <td> {{ item.f_customer }}</td>
                     <td> {{ item.f_mobile }}</td>
+                    <td>
+                    <router-link :to="{name: 'Edit', params: { id: item.f_running }}"><i class="far fa-edit"></i></router-link>
+                    <router-link :to="{name: 'Delete', params: { id: item.f_running }}"><i class="fas fa-trash-alt"></i></router-link>
+                    </td>
                   </tr>
 
                   </tbody>
@@ -60,12 +65,16 @@
                     <th>ยูนิต</th>
                     <th>ชื่อ - นามสกุล</th>
                     <th>มือถือ</th>
+                    <th>...</th>
                   </tr>
                   </tfoot>
                 </table>
               </div>
         <div class="card-footer">
           Footer
+              <div v-if="messagesboxs " class="alert alert-danger" role="alert">
+                {{ messagesboxs }}
+              </div>
         </div>
       </div>
     </section>
@@ -85,19 +94,30 @@ export default {
     Header,
     Footer,
   },
-  props: {
-    title: String
-  },
   data(){
     return {
-      info: []
+      items: [],
+      messagesboxs:'',
     }
   },
-    mounted(){
-    axios.get('booking').then(response => {
-      console.log(response.data)
-      this.info = response.data
-    })
+  created: function()
+  {
+    this.getItems();
+  },
+    methods: {
+getItems()
+      {
+          axios.get('booking').then(response => {
+            console.log(response.data)
+            this.messagesboxs = response.data.data.messagesboxs
+            this.items = response.data;
+          })
+          .catch(error => {
+              console.log(error)
+              this.messagesboxs = error
+            })
+        .finally(() => this.loading = false)
+      }
   }
 };
 </script>

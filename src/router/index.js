@@ -6,6 +6,7 @@ import Admin from "../views/Admin.vue";
 import Dashboard from "../views/Dashboard.vue";
 import Customer from "../views/Customer.vue";
 import Room from "../views/Room.vue";
+import Company from "../views/Company.vue";
 
 Vue.use(VueRouter);
 
@@ -24,22 +25,27 @@ const routes = [
     path: "/admin",
     name: "Admin",
     component: Admin,
-  },  
+  },
   {
     path: "/dashboard",
     name: "Dashboard",
     component: Dashboard,
-  }, 
+  },
   {
     path: "/room",
     name: "Room",
     component: Room,
-  },    
+  },
   {
     path: "/customer",
     name: "Customer",
     component: Customer,
-  },           
+  },
+  {
+    path: "/company",
+    name: "Company",
+    component: Company,
+  },
 ];
 
 const router = new VueRouter({

@@ -56,8 +56,8 @@
               <div v-if="messagesboxs === 'Success'" class="alert alert-success" role="alert">
                 {{ messagesboxs }}
               </div>
-              <div v-if="token" class="alert alert-danger" role="alert">
-                {{ token }}
+              <div v-if="messagesboxs " class="alert alert-danger" role="alert">
+                {{ messagesboxs }}
               </div>
             </div>
             <small v-if="token" class="text-muted">Token : {{ token }}.</small>
@@ -87,8 +87,8 @@ export default {
       })
       .then(response => {
         this.messagesboxs = response.data.data.messagesboxs
-        console.log(response.data.data)
-      this.token = response.data.data.token
+        const info = response.data.data;
+        this.$emit('login', info)
       if (response.data.data.token) {
         localStorage.setItem('token', response.data.data.token)
         this.$router.push('/admin')
@@ -99,18 +99,6 @@ export default {
         this.messagesboxs = error
       })
       .finally(() => this.loading = false)
- /*
-      const response =  axios.post("authen/login", {
-        f_email: this.f_email,
-        f_password: this.f_password,
-      });
-      if(response.data.messagesboxs === 'Success'){
-      this.token = response.data.token
-      if (response.data.token) {
-        localStorage.setItem('token', response.data.token)
-        this.$router.push('/admin')
-      }
-      */
     },
   },
 };

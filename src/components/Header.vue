@@ -22,7 +22,6 @@
             href="#"
             role="button"
           >
-            
           </a>
           <div class="navbar-search-block">
 
@@ -143,7 +142,7 @@
             class="nav-link"
             data-widget="control-sidebar"
             data-slide="true"
-            href="#"
+            href="/" @click="logout"
             role="button"
           >
             <i class="fas fa-th-large"></i>
@@ -153,3 +152,34 @@
     </nav>
   </div>
 </template>
+<script>
+export default {
+  name: 'Header',
+  data () {
+    return {
+      f_email: '',
+      f_password: '',
+      message: '',
+      token: '',
+      messagesboxs: ''
+    }
+  },
+  created () {
+    this.checkLogin()
+  },
+  methods: {
+    checkLogin () {
+      var username = localStorage.getItem('token')
+      if (!username) {
+        this.$router.push('/')
+      } else {
+        this.f_email = username
+      }
+    },
+    logout () {
+      localStorage.clear()
+      this.$router.push('/')
+    }
+  }
+}
+</script>
