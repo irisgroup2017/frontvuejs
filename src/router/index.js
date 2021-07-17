@@ -7,6 +7,8 @@ import Dashboard from "../views/Dashboard.vue";
 import Customer from "../views/Customer.vue";
 import Room from "../views/Room.vue";
 import Company from "../views/Company.vue";
+import CompanyCreate from "../views/Company/CompanyCreate.vue";
+import CompanyEdit from "../views/Company/CompanyEdit.vue";
 
 Vue.use(VueRouter);
 
@@ -45,6 +47,16 @@ const routes = [
     path: "/company",
     name: "Company",
     component: Company,
+  },
+  {
+    path: "/companyCreate",
+    name: "CompanyCreate",
+    component: CompanyCreate,
+  },
+  {
+    path: "/companyEdit/:id",
+    name: "CompanyEdit",
+    component: CompanyEdit,
   },
 ];
 

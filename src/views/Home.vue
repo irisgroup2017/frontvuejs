@@ -56,7 +56,7 @@
               <div v-if="messagesboxs === 'Success'" class="alert alert-success" role="alert">
                 {{ messagesboxs }}
               </div>
-              <div v-if="messagesboxs " class="alert alert-danger" role="alert">
+              <div v-else class="alert alert-danger" role="alert">
                 {{ messagesboxs }}
               </div>
             </div>
